@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #4f4f4f ;
+    display: flex;
+    height: 200px;
+}
+
+.logo-navbar {
+    height: 100px;
+    width: 100px;
+}
+.carrito-navbar {
+    height: 50px;
+    width: 50px;
+    display: flex;
+
+}
+.carrito-contador {
+    color: red;
+    display: flex;
+    width: 20px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.productos{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: rgba(228, 228, 228, 0.965);
+}
