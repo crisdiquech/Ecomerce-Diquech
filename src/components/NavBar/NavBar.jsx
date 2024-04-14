@@ -1,21 +1,26 @@
 import "./navbar.scss"
 import CardWidget from "./CardWidget" 
+import {Link} from "react-router-dom"
+
+
 const NavBar = () => {
 
         
 
     return (
         <nav className="navbar">
+            <Link to="/">
             <img className="logo-navbar " src="/img/logo.png" />
+            </Link>
 
             <ul className="productos">
-            <li>Remeras</li>
-            <li>Pantalones</li>
-            <li>Buzos</li>
-            <li>Zapatillas</li>
+            <Link to="/category/remeras">Remeras</Link>
+            <Link to="/category/pantalones">Pantalones</Link>
+            <Link to="/category/buzos">Buzos</Link>
+            <Link to="/category/zapatillas">Zapatillas</Link>
             </ul>
             <CardWidget/>
-        </nav>
+        </nav> 
 
         
     )

@@ -34,7 +34,7 @@ const products = [
         name: "PANTALON NIÑO",
         description: "Pantalon frizado para niño",
         stock: 10,
-        category: "Pantalones",
+        category: "pantalones",
         image: "./public/img/pantalon-niño.jpg",
         price: 15000
       },

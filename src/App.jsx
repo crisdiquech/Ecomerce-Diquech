@@ -4,24 +4,29 @@ import NavBar from './components/NavBar/NavBar'
 import ItemListConteiner from './components/ItemListContainer/ItemListConteiner'
 import CountControler from './components/CountControler'
 import ItemDetailContainer from './components/ItemDatailContainer/ItemDetailContainer'
-
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 function App() {
   
   return (
     <>
-      <div>
+      <BrowserRouter>
+     
         
         <NavBar/>
-      
-      </div>
-      <div>
-        <ItemDetailContainer/>
-        <ItemListConteiner saludo = "Bienvenido a la tienda de ropa Online"/>
-    
-      </div>
-      
 
+        <Routes>
+          <Route path="/" element={<ItemListConteiner/>}/>
+          <Route path="/category/:idCategory" element={<ItemListConteiner/>}/>
+          
+          
+        </Routes>
+        
+      
+    
+      
+      
+      </BrowserRouter>
     </>
   )
 }
