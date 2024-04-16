@@ -5,7 +5,7 @@ const products = [
       description: "Remera de algodón para niños",
       stock: 10,
       category: "remeras",
-      image: "./public/img/remera-niño.jpg",
+      image: "../public/img/remera-niño.jpg",
       price: 10000
     },
 
@@ -15,7 +15,7 @@ const products = [
         description: "Remera de algodón para niñas",
         stock:10 ,
         category: "remeras",
-        image: "./public/img/remera-niña.jpg",
+        image: "../public/img/remera-niña.jpg",
         price: 10000
       },
 
@@ -25,7 +25,7 @@ const products = [
         description: "Remera de algodón para bebes",
         stock:10 ,
         category: "remeras",
-        image: "./public/img/remera-bebe.jpg",
+        image: "../public/img/remera-bebe.jpg",
         price: 10000
       },
 
@@ -35,7 +35,7 @@ const products = [
         description: "Pantalon frizado para niño",
         stock: 10,
         category: "pantalones",
-        image: "./public/img/pantalon-niño.jpg",
+        image: "../public/img/pantalon-niño.jpg",
         price: 15000
       },
 
@@ -45,7 +45,7 @@ const products = [
         description: "Pantalon frizado para niña",
         stock: 10,
         category: "pantalones",
-        image: "./public/img/pantalon-niña.jpg",
+        image: "../public/img/pantalon-niña.jpg",
         price: 15000
       },
 
@@ -55,7 +55,7 @@ const products = [
         description: "Pantalon de algodon para bebe",
         stock: 10,
         category: "pantalones",
-        image: "./public/img/pantalon-bebe.jpg",
+        image: "../public/img/pantalon-bebe.jpg",
         price: 15000
       },
 
@@ -65,7 +65,7 @@ const products = [
         description: "Buzo frizado para niño",
         stock: 10,
         category: "buzos",
-        image: "./public/img/buzo-niño.jpg",
+        image: "../public/img/buzo-niño.jpg",
         price: 20000
       },
 
@@ -75,7 +75,7 @@ const products = [
         description: "Buzo frizado para niña",
         stock: 10,
         category: "buzos",
-        image: "./public/img/buzo-niña.jpg",
+        image: "../public/img/buzo-niña.jpg",
         price: 20000
       },
 
@@ -85,7 +85,7 @@ const products = [
         description: "Buzo de algodon para bebe",
         stock: 10,
         category: "buzos",
-        image: "./public/img/buzo-bebe.jpg",
+        image: "../public/img/buzo-bebe.jpg",
         price: 20000
       },
 
@@ -95,7 +95,7 @@ const products = [
         description: "Zapatilla deportiva para niño",
         stock: 10,
         category: "zapatillas",
-        image: "./public/img/zapatilla-niño.jpg",
+        image: "../public/img/zapatilla-niño.jpg",
         price: 50000
       },
 
@@ -105,7 +105,7 @@ const products = [
         description: "Zapatilla deportiva para niña",
         stock: 10,
         category: "zapatillas",
-        image: "./public/img/zapatilla-niña.jpg",
+        image: "../public/img/zapatilla-niña.jpg",
         price: 50000
       },
 
@@ -115,7 +115,7 @@ const products = [
         description: "Zapatilla deportiva para bebe",
         stock: 10,
         category: "zapatillas",
-        image: "./public/img/zapatilla-bebe.jpg",
+        image: "../public/img/zapatilla-bebe.jpg",
         price: 50000
     }
 
