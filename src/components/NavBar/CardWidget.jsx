@@ -10,7 +10,7 @@ const CardWidget = () => {
 
   return (
    <Link to="/cart">
-    <p className='carrito-contador'>{totalQuantity()}</p>
+    <p className='carrito-contador'>{totalQuantity() === 0 ? "": totalQuantity() }</p>
     <img className='carrito-navbar' src='/img/carrito.png' />
     </Link>
   );

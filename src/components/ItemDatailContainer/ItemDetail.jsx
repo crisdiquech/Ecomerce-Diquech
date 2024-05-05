@@ -4,17 +4,20 @@ import "../CountControler"
 import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../../context/CartContext'
 import {useContext} from "react"
+import { useState } from 'react'
+import {Link} from "react-router-dom";
 
 const ItemDetail = ({product}) => {
 
   const { cart, addToCart } = useContext(CartContext)
-  console.log (cart)
+  const [clickAdd, setClickAdd] = useState(false)
+
 
   const handleAddToCart = (count) => {
-
+   
     const productCart = {...product, quantity: count }
-
    addToCart(productCart)
+   setClickAdd(true)
 
   }
 
@@ -24,9 +27,13 @@ const ItemDetail = ({product}) => {
     <div>
     <img src={product.image} className="card-img-top"/>
     </div>
-    <p className="card-text">{product.description}</p>
-    <p className="card-text">{product.price}</p>
-    <ItemCount handleAddToCart={handleAddToCart} stock={product.stock}/>
+    <p className="card-text">Descripcion:{product.description}</p>
+    <p className="card-text">Precio:${product.price}</p>
+    {
+      clickAdd ? <Link to="/cart" > Ir al Carrito</Link> : <ItemCount handleAddToCart={handleAddToCart} stock={product.stock}/>
+
+    }
+    
 </div>
   )
 }
