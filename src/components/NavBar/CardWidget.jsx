@@ -1,12 +1,19 @@
 import React from 'react'
 import "./navbar.css"
-const CardWidget = () => { 
-  return (
-    <>
-    <p className='carrito-contador'>5</p>
-    <img className='carrito-navbar' src='/img/carrito.png' />
-    </>
-  )
-}
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { Link } from "react-router-dom";
 
-export default CardWidget
+const CardWidget = () => { 
+
+  const { totalQuantity } = useContext(CartContext)
+
+  return (
+   <Link to="/cart">
+    <p className='carrito-contador'>{totalQuantity()}</p>
+    <img className='carrito-navbar' src='/img/carrito.png' />
+    </Link>
+  );
+};
+
+export default CardWidget;
