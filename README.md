@@ -16,4 +16,4 @@
 
 ## Descripcion:
 
-Ecomerce de tienda de ropa para niños realizado con React, permite filtrar por categoria, ver detalles de los articulos, agregar varios productos al carrito, y ver los totales de compra antes de realizar la confirmacion, con carga de formulario y devolucion de ID de compra para el usuario.
+Ecomerce de tienda de ropa para niños realizado con React, permite filtrar por categoria, ver detalles de los articulos, agregar varios productos al carrito, y ver los totales de compra antes de realizar la confirmacion, con carga de formulario y devolucion de ID de compra para el usuario
