@@ -43,6 +43,7 @@ const  handleSubmit = (event) => {
        clearCart()
     };
 
+   
 
   return (
     <div>
